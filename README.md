@@ -1,4 +1,4 @@
-# AI_created
+# AI_created app for gpa calculations
 weightage
 ( 
 quizes 10%, assignments 15%, midterms 25%, finals 50%
