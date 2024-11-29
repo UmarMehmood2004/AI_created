@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamic GPA calculator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>GPA Calculator</h1>
+    <form id="gpaForm">
+      <!-- Assignments -->
+      <div id="assignmentsSection">
+        <h3>Assignments</h3>
+        <div class="field-group">
+          <input type="number" class="obtained" placeholder="Obtained Marks" required>
+          <input type="number" class="total" placeholder="Total Marks" required>
+        </div>
+      </div>
+      <button type="button" id="addAssignment">Add Assignment</button>
+
+      <!-- Quizzes -->
+      <div id="quizzesSection">
+        <h3>Quizzes</h3>
+        <div class="field-group">
+          <input type="number" class="obtained" placeholder="Obtained Marks" required>
+          <input type="number" class="total" placeholder="Total Marks" required>
+        </div>
+      </div>
+      <button type="button" id="addQuiz">Add Quiz</button>
+
+      <!-- Midterm -->
+      <div id="midtermSection">
+        <h3>Midterm Exam </h3>
+        <div class="field-group">
+          <input type="number" class="obtained" placeholder="Obtained Marks" required>
+          <input type="number" class="total" placeholder="Total Marks" required>
+        </div>
+      </div>
+
+      <!-- Final Exam -->
+      <div id="finalSection">
+        <h3>Final Exam </h3>
+        <div class="field-group">
+          <input type="number" class="obtained" placeholder="Obtained Marks" required>
+          <input type="number" class="total" placeholder="Total Marks" required>
+        </div>
+      </div>
+
+      <button type="button" id="calculateGPA">Calculate GPA</button>
+    </form>
+
+    <div id="result" class="hidden">
+      <h2>Your GPA Results</h2>
+      <p id="percentage"></p>
+      <p id="gpa"></p>
+    </div>
+  </div>
+  <script src="sceipt.js"></script>
+</body>
+</html>
