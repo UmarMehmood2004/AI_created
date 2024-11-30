@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Quiz App</h1>
+    <nav>
+      <button id="createQuizBtn">Create Quiz</button>
+      <button id="takeQuizBtn">Take Quiz</button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Quiz Creation Section -->
+    <section id="quizCreation" class="hidden">
+      <h2>Create Quiz</h2>
+      <div id="questionsContainer">
+        <div class="question-block">
+          <label>Question: <input type="text" class="question"></label>
+          <label>Option 1: <input type="text" class="option"></label>
+          <label>Option 2: <input type="text" class="option"></label>
+          <label>Option 3: <input type="text" class="option"></label>
+          <label>Option 4: <input type="text" class="option"></label>
+          <label>Correct Answer: <input type="text" class="correct-answer"></label>
+        </div>
+      </div>
+      <button id="addQuestionBtn">Add Another Question</button>
+      <button id="saveQuizBtn">Save Quiz</button>
+    </section>
+
+    <!-- Take Quiz Section -->
+    <section id="quizTaking" class="hidden">
+      <h2>Take Quiz</h2>
+      <form id="takeQuizForm"></form>
+      <button id="submitQuizBtn" class="hidden">Submit Quiz</button>
+      <div id="quizResult" class="hidden"></div>
+    </section>
+  </main>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
